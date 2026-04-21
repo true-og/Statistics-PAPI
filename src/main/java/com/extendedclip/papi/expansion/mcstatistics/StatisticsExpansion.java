@@ -40,7 +40,7 @@ import java.util.logging.Level;
 public class StatisticsExpansion extends PlaceholderExpansion implements Cacheable {
 
     private final ListMultimap<Statistic, Material> ignoredMaterials = ArrayListMultimap.create();
-    private final String VERSION = getClass().getPackage().getImplementationVersion();
+    private final String version = getClass().getPackage().getImplementationVersion();
 
     @Override
     public String getAuthor() {
@@ -54,7 +54,7 @@ public class StatisticsExpansion extends PlaceholderExpansion implements Cacheab
 
     @Override
     public String getVersion() {
-        return VERSION;
+        return version == null ? "2.0.2" : version;
     }
 
     @SuppressWarnings({"DuplicatedCode", "Guava"})

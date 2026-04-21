@@ -18,7 +18,7 @@ public final class ServerVersion {
     public static final String AS_STRING = Bukkit.getBukkitVersion().split("-")[0];
 
     private static final int CURRENT_VERSION = getCurrentVersion();
-    private static final int LATEST_VERSION = 1_19_2;
+    private static final int LATEST_VERSION = 1_19_4;
 
     public static final boolean IS_LEGACY = CURRENT_VERSION < 1_13_0;
     /**
